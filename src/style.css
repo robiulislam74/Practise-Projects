@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.homeBody{
+    background: #c5b0b0;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+
+.boxDawon{
+    background: #395B64;
+    /* width: 100%; */
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);
+    padding: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.boxUp {
+    background: #5e7d7e;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);
+    padding: 40px 10px 40px 40px;
+    /* padding-left: 40px; */
+}
+
+.boxUp .nameBox {
+    width: 400px;
+    padding: 18px 70px 18px 20px;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+}
+
+.boxUp .nameBox::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 25px 70px 25px 0px;
+}
+
+.boxUp .infoBox {
+    width: 400px;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    margin-top: 20px;
+    padding: 25px 70px 110px 20px;
+    margin-right: 29px;
+}
+
+.boxUp .infoBox::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.boxUp .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    width: 490px;
+    margin-top: 30px;
+    padding: 14px;
+    border-radius: 50px;
+}
+
+.informationBox{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.informationBox h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.informationBox .card {
+    background: #DB87A3;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);
+    padding: 0 83px 0 0;
+    width: 489px;
+    text-align: start;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.informationBox .card h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.informationBox .card p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600px;
+    margin-top: 5px;
+}
+
+.informationBox .card .deleteIcon {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 26px;
+    color: rgb(155, 35, 35);
+}
+
+.informationBox .card .editIcon {
+    position: absolute;
+    top: 51px;
+    right: 10px;
+    font-size: 26px;
+    color: green;
+}
+
+/* .ModalStyle {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    padding: 15px;
+   border: none !important;
+} */
+
+.modalStyle{
+    width: 400px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    padding: 15px;
+}
+
+.modalStyle h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.modalStyle p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.modalStyle input {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 30px 15px 10px;
+    width: 300px;
+    height: 60px;
+}
+
+.modalStyle button {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    background: #fff;
+    color: blue;
+    margin-left: 25px;
+    float: right;
+    margin-top: 10px;
+}
+
+
+
