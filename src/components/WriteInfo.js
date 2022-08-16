@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '@mui/material'
 import { getDatabase, ref, set, push } from "firebase/database";
 
+
 const WriteInfo = (props) => {
 const db = getDatabase();
 const [ name,setName ] = useState('')

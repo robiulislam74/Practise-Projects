@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import CardContent from '@mui/material/CardContent'
 import DeleteIcon from '@mui/icons-material/Delete';
 import { BiEditAlt } from 'react-icons/bi';
-import { Modal,Typography,Box } from '@mui/material';
+import { Modal,Box } from '@mui/material';
 import { getDatabase, ref, onValue,update, remove} from "firebase/database";
+
 
 
 const ShowInfo = (props) => {
@@ -29,7 +30,7 @@ const ShowInfo = (props) => {
             setUsers(userArry)
         });
 
-  },[props.data,deleteData,rltUpdate])
+  },[props.data,deleteData,rltUpdate,db])
 
 const deleteDataHandler= (info)=>{
     remove(ref(db, 'users/'+info.id))
@@ -78,7 +79,7 @@ const cancelHandler = ()=>{
                   <Box className='modalStyle'>
                       <h3>Update Your Data</h3>
                       <p>Edit your details and hit the update Button:</p>
-                      <input placeholder={users.details} onChange={(e)=> setUpdateData(e.target.value)}/>
+                      <input type="text" placeholder={users.details} onChange={(e)=> setUpdateData(e.target.value)}/>
                       <button onClick={()=> updateDataHandler(users)}>Update</button>
                       <button onClick={cancelHandler}>Cancel</button>
                   </Box>
